@@ -1,0 +1,127 @@
+/* 公用的样式 */
+ul{
+    list-style: none;
+}
+*{
+    margin: 0;padding: 0;
+}
+body{
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+}
+.topbar{
+    height: 40px;
+    background: #333;
+    font-size: 12px;
+    color: #fff;
+    /* 单行文字高度 */
+    line-height: 40px;
+}
+/* 公共居中class */
+.warpper{
+    
+    width: 1200px;
+    
+    margin:0 auto;
+}
+/* 行元素或文字在父元素中垂直居中 */
+.topbar-list{
+    
+    float: left;
+
+}
+.topbar a{
+    color: #fff;
+    text-decoration: none;
+}
+.topbar a:hover{
+    color: #ddd;
+}
+.topbar span{
+    margin:0 2px;
+}
+.topbar-info{
+    float: right;
+}
+/* header开始 */
+.header{
+    height: 100px;
+    
+}
+.logo{
+    float: left;
+    margin-top: 23px;
+}
+.logo img{
+    width: 187px;
+    height: 55px;
+}
+.nav{
+    float: right;
+    margin: 36px -23px 0 0;
+}
+/* 亲子代选择器 */
+.nav > li{
+    float: left;
+    padding: 0 23px;
+    height: 40px;
+    
+}
+.nav > li .nav-list{
+    color: #212121;
+    font-size: 18px;
+}
+.nav > li .nav-list:hover{
+    color: #e94400;
+}
+.nav-sublist{
+    position: absolute;
+    top: 40px;
+    left: -31px;
+    background-color: #fff;
+    width: 150px;
+    height: 102px;
+    border:1px solid #e5e5e5;
+    border-radius: 2px;
+    display: none;
+}
+.nav-money{
+    position: relative;
+}
+.nav-money:hover .nav-sublist{
+    display: block;
+}
+.nav-sublist ul{
+    padding: 10px 0;
+}
+.nav-sublist li{
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+.nav-sublist li:hover{
+    background: #eee;
+}
+.nav-sublist li a{
+    color: #434343;
+}
+.nav-sublist li:hover a{
+    color: #e94400;
+}
+.nav-sublist::before{
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    left: 72px;
+    top: -5px;
+    border: 1px solid #e5e5e5;
+    transform: rotate(45deg);
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    background: #fff;
+}
+/* header结束 */
