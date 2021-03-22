@@ -125,3 +125,155 @@ a{
     background: #fff;
 }
 /* header结束 */
+/* banner开始 */
+.banner{
+    height: 640px;
+    background: #e5e5e5 center 0; 
+}
+.banner h2{
+    color: #fff;
+    font-size: 54px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 193px;
+
+}
+.download_btn{
+    text-align: center;
+    margin-top: 36px; 
+}
+.download_btn a{
+    font-size: 24px;
+    color: #fff;
+    background-color:#ff0000;
+    width: 260px;
+    height: 60px;
+    line-height: 60px;
+    display: inline-block;
+    border-radius: 5px;
+
+}
+/* banner结束 */
+/* content开始 */
+.content{
+    width: 1170px;
+    
+    border: 1px solid #e6e6e6;
+    border-color: bisque;
+    background: white;
+    margin-top: -80px;
+    padding: 30px 0 0px 30px;
+    overflow: hidden;
+}
+.list{
+    width: 360px;
+    background: orange;
+    float: left;
+    margin-right: 30px;
+}
+.list-img{
+    background-color:yellow;
+    height: 180px;
+    overflow: hidden;
+}
+.list-title{
+    color: #fff;
+    font-size: 33px;
+    font-weight: 400;
+    margin: 44px 0 0 30px ;
+}
+.list-desc{
+    color: #fff;
+    font-size: 33px;
+    margin: 16px 0 0 30px;
+}
+.list-info{
+    padding: 10px 30px;
+    color: #666;
+    font-size: 16px;
+    background: white;
+}
+.list-info span{
+    color: orange;
+}
+.list-blue .list-info span{
+    color: blue;
+}
+.list-green .list-info span{
+    color: green;
+}
+.list-info div{
+    margin-top: 20px
+}
+.list-info div.list-more{
+    border-top: 1px solid #ececec;
+    font-size: 16px;
+    color: #fd3911;
+    text-align: center;
+    margin: 40px 0 0 10px;
+    height: 62px;
+    line-height: 62px;
+}
+.list-blue .list-img{
+    background: blue;
+
+}
+.list-green .list-img{
+    background: green;
+
+}
+
+/* content结束 */
+/* footer开始 */
+.footer{
+    height: 209px;
+    background: #eee;
+}
+.footer-left-logo{
+    height: 46px;
+    width: 46px;
+    float: left;
+    margin-right: 18px;
+}
+.footer-left-message{
+    float: left;
+
+}
+.footer-left-message li{
+    float: left;
+    font-size: 14px;
+    border-right: 1px solid #575757;
+    padding: 0 8px;
+    
+}
+.footer-left-message li a{
+    color: #575757;
+    height: 14px;
+    display: block;
+    line-height: 14px;
+}
+.about{
+    overflow: hidden;
+    padding: 3px 0 7px;
+}
+.contect li{
+    font-size: 12px;
+    color: #6d6d6d;
+    height: 14px;
+    line-height: 14px;
+
+}
+.right-1{
+    color: #575757;
+    font-size: 14px;
+    
+
+}
+.footer-left{
+    overflow: hidden;
+    float: left;
+}
+.footer-right{
+    float: right;
+}
+/* footer结束 */
