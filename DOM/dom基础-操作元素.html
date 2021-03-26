@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            width: 200px;
+            height: 100px;
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        woaini 
+    </div>
+    <button id="btn">dianwo </button>
+
+    <h1 id="h1" aa = "bb">woshibiaoti</h1>
+    <button id="btn2">插入一行</button>
+    <button id="btn3">shanchuyihang</button>
+    <button id="btn4">didi</button>
+
+
+    <ul id="ul1">
+        <li>item</li>
+        <li>item</li>
+    </ul>
+    <script>
+        var div1 = document.getElementById('div1');
+        div1.onclick = function(){
+            div1.style.background = '#ff0000';
+            div1.style.color = '#0f0';
+            div1.style.fontSize = '46px';
+        };
+
+        var btn = document.getElementById('btn');
+        var h1 = document.getElementById('h1'); 
+        btn.onclick = function(){
+
+            
+            /* h1.innerHTML = 'haah';
+            console.log(h1.innerHTML); */
+            // h1.className = "cc";
+            // console.log(h1.getAttribute('aa'));
+        
+            var p1 = document.createElement('p');
+            p1.innerHTML = 'p';
+            document.body.appendChild(p1);
+        };
+
+        var btn2 = document.getElementById('btn2');
+        var ul1 = document.getElementById('ul1');
+        var btn3 = document.getElementById('btn3');
+        var btn4 = document.getElementById('btn4');
+        var li;
+        btn2.onclick = function(){
+
+            li = document.createElement('li');
+            li.innerHTML = "haha";
+            ul1.appendChild(li);
+        }
+        btn3.onclick = function(){
+            ul1.removeChild(li);
+        }
+        btn4.onclick = function(){
+            var newLi = document.createElement('li');
+            newLi.innerHTML = "newli";
+            var arr = ul1.getElementsByTagName('li');
+            ul1.replaceChild(newLi,arr[1]);
+        }
+
+
+    </script>
+    
+</body>
+</html>
