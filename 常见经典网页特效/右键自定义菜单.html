@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #menu{
+            width: 120px;
+            border: 1px solid #000;
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            
+        }
+        #menu .item{
+           list-style: none;
+           width: 120px;
+           height: 30px;
+           border-bottom: 1px dashed #ccc;
+           text-align: center;
+           line-height: 30px;
+           cursor:pointer;
+        }
+
+        #menu .item:last-child{
+            border: none;
+        }
+        #menu .item:hover{
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+     <ol id="menu">
+         <li class="item">菜单1</li>
+         <li class="item">菜单2</li>
+         <li class="item">菜单3</li>
+         <li class="item">菜单4</li>
+         <li class="item">菜单5</li>
+     </ol>
+    
+
+    <script>
+        var omenu = document.getElementById('menu');
+        var olis = omenu.getElementsByTagName('li');
+        window.oncontextmenu = function(e){
+            e = e||window.event;
+            omenu.style.display='block';
+            omenu.style.top = e.clientY + 'px';
+            omenu.style.left = e.clientX + 'px';
+
+            return false;//阻止浏览器默认行为
+        }
+
+
+        window.onclick = function(){
+            omenu.style.display = 'none';
+        }
+
+        for(var i=0; i<olis.length; i++){
+            olis[i].onclick = function(e){
+                alert(this.innerHTML);
+            };
+        };
+
+
+
+    </script>
+</body>
+</html>
