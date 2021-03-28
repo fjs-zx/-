@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #ul1{
+            margin: 0;
+            padding: 0;
+            width: 120px;
+            
+            border: 1px solid #000;
+            display: none;
+            position: absolute;
+            list-style: none;
+        }
+
+        #ul1 .item{
+            border-bottom: 1px dashed #ccc;
+            text-align: center;
+            width: 120px;
+            height: 30px;
+            line-height: 30px;
+            cursor: pointer;
+        }
+
+        #ul1 .item:last-child{
+            border: none;
+        }
+
+        #ul1 .item:hover{
+            background-color: #0c0;
+        }
+
+    </style>
+</head>
+<body>
+    <ul id="ul1">
+        <li class="item">item1</li>
+        <li class="item">item2</li>
+        <li class="item">item3</li>
+        <li class="item">item4</li>
+        <li class="item">item5</li>
+    </ul>
+
+
+
+    <script>
+         var oul = document.getElementById('ul1');
+         var olis = oul.getElementsByTagName('li');
+         window.oncontextmenu = function(e){
+             oul.style.display = 'block';
+
+             oul.style.top = e.clientY + 'px';
+             oul.style.left = e.clientX + 'px';
+
+
+             return false;
+         };
+
+         window.onclick = function(){
+             oul.style.display =' none';
+         }
+
+         for(var i=0; i<olis.length; i++){
+             olis[i].onclick = function(e){
+                 alert(this.innerHTML);
+             };
+         };
+    </script>
+
+</body>
+</html>
